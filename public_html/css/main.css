@@ -1,0 +1,21 @@
+.weather-app-main{
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    background-color: dimgray;
+    border-radius: 5px;
+    color: #cccccc;
+}
+
+.weather-app-main #caption{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.weather-app-main #footer{
+    display: block;
+    text-align: right;
+    width: 100%;
+    font-size: 10px;
+}
