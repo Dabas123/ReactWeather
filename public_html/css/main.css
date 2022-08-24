@@ -11,6 +11,16 @@
     display: block;
     text-align: center;
     width: 100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.weather-app-main #cities{
+    display: block;
+    width: 60%;
+    margin-bottom: 10px;
+    background-color: dimgray;
+    color: #cccccc;
 }
 
 .weather-app-main #footer{
@@ -18,4 +28,33 @@
     text-align: right;
     width: 100%;
     font-size: 10px;
+}
+
+#weather-panel-dt{
+    text-align: center;
+}
+
+#weather-panel-weather{
+    position: relative;
+}
+
+#weather-panel-icon{
+    max-width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #99ccff;
+    background-color:  #99ccff;
+}
+
+#weather-panel-temp{
+    margin-left: 8px;
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    font-size: 40px;
+}
+
+#weather-panel-location{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
 }

@@ -9,8 +9,6 @@ function WeatherPanel(props) {
     }
 
     if (props.loading) {
-        //http://openweathermap.org/img/wn/10d@2x.png
-
         return (
                 <div id = "weather-app-panel">
                     <p>Loading...</p>
@@ -27,14 +25,23 @@ function WeatherPanel(props) {
     }
 
     return (
-            <div id = "weather-app-panel">  
-                <p>{props.weatherData.date}</p>
-                <p>{props.weatherData.time}</p>
-                <p>{props.weatherData.country}</p>
-                <p>{props.weatherData.city}</p>
-                <p>{props.weatherData.temp}</p>
-                <p>{props.weatherData.humidity}</p>
-                <p>{props.weatherData.wind}</p>
+            <div id = "weather-panel">  
+                <div id="weather-panel-dt">
+                    {props.weatherData.date} {props.weatherData.time}
+                </div>
+                <div id="weather-panel-location">
+                    {props.weatherData.city} {props.weatherData.country}
+                </div>
+                <div id="weather-panel-weather">
+                    <img id="weather-panel-icon" 
+                         src={props.weatherData.icon} 
+                         alt="weather icon"/> 
+                    <span id="weather-panel-temp">{props.weatherData.temp}</span>
+                </div>
+                <div id="weather-app-panel-extra">
+                    <p>Humidity: {props.weatherData.humidity}</p>
+                    <p>Wind: {props.weatherData.wind}</p>
+                </div>
             </div>
             );
 }
